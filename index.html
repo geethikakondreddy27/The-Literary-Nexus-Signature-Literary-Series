@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Literary Nexus Signature Series — An exclusive literary engagement in Portland.">
+  <title>The Literary Nexus | Signature Literary Series</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://picsum.photos/id/1015/1600/900"> 
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo" aria-label="The Literary Nexus">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">The Literary Nexus</span>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#authors">Authors</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#venue">Venue</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════ -->
+    <section class="hero" aria-label="Event Hero">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Signature Literary Series · Portland, Oregon</p>
+        <h1 class="hero-headline" id="hero-headline">
+          The Literary Nexus Presents:<br>
+          <em>An Evening with Our Authors</em>
+        </h1>
+        <h2 class="hero-subheadline">A Signature Series Engagement</h2>
+
+        <!-- Countdown Timer -->
+        <div class="countdown" role="timer" aria-live="polite" aria-label="Event countdown">
+          <p class="countdown-label">Event Commences In</p>
+          <div class="countdown-blocks">
+            <div class="countdown-block">
+              <span class="countdown-num" id="cd-days">--</span>
+              <span class="countdown-unit">Days</span>
+            </div>
+            <div class="countdown-sep" aria-hidden="true">:</div>
+            <div class="countdown-block">
+              <span class="countdown-num" id="cd-hours">--</span>
+              <span class="countdown-unit">Hours</span>
+            </div>
+            <div class="countdown-sep" aria-hidden="true">:</div>
+            <div class="countdown-block">
+              <span class="countdown-num" id="cd-minutes">--</span>
+              <span class="countdown-unit">Minutes</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#rsvp" class="btn btn-primary" id="hero-cta">
+          Secure Your Exclusive Engagement Slot
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         FEATURED AUTHORS
+    ═══════════════════════════════════ -->
+    <section class="section authors-section" id="authors" aria-labelledby="authors-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Featured Personalities</p>
+          <h2 id="authors-heading">Literary Voices of the Evening</h2>
+          <p class="section-lead">Distinguished authors whose work has shaped contemporary discourse.</p>
+        </div>
+        <div class="authors-grid" id="authors-grid" role="list" aria-label="Featured authors">
+          <!-- JS populated -->
+          <div class="loading-state" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Curating author profiles…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         SCHEDULE
+    ═══════════════════════════════════ -->
+    <section class="section schedule-section" id="schedule" aria-labelledby="schedule-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Plan Your Evening</p>
+          <h2 id="schedule-heading">Engagement Schedule &amp; Key Logistics</h2>
+        </div>
+        <ul class="schedule-list" aria-label="Event schedule">
+          <li class="schedule-item">
+            <span class="schedule-time">7:00 PM</span>
+            <div class="schedule-details">
+              <strong>Doors Open &amp; Welcome Reception</strong>
+              <p>Arrive early to mingle with fellow book lovers over curated refreshments.</p>
+            </div>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">7:30 PM</span>
+            <div class="schedule-details">
+              <strong>Author Reading &amp; Discussion</strong>
+              <p>Featured authors share excerpts and reflections on their creative journeys.</p>
+            </div>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">8:30 PM</span>
+            <div class="schedule-details">
+              <strong>Q&amp;A Session</strong>
+              <p>An open dialogue between the audience and our distinguished guests.</p>
+            </div>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">9:00 PM</span>
+            <div class="schedule-details">
+              <strong>Book Signing &amp; Networking</strong>
+              <p>Get your copies signed and continue the conversation over closing refreshments.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         RSVP FORM
+    ═══════════════════════════════════ -->
+    <section class="section rsvp-section" id="rsvp" aria-labelledby="rsvp-heading">
+      <div class="container rsvp-container">
+        <div class="rsvp-copy">
+          <p class="section-eyebrow">Registration &amp; Logistics</p>
+          <h2 id="rsvp-heading">Reserve Your Place</h2>
+          <p>Attendance is by invitation and RSVP only. Seats are strictly limited to preserve the intimacy of the experience. Confirm your place below — we look forward to welcoming you.</p>
+        </div>
+        <div class="rsvp-form-wrap">
+          <form class="rsvp-form" id="rsvp-form" method="POST" action="https://httpbin.org/post" novalidate aria-label="RSVP form">
+            <div class="form-group">
+              <label for="rsvp-name">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="rsvp-name" name="name" placeholder="Your Full Name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="rsvp-email">Professional Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="rsvp-email" name="email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="rsvp-affiliation">Organization / Affiliation <span class="optional">(Optional)</span></label>
+              <input type="text" id="rsvp-affiliation" name="affiliation" placeholder="Your Organization" autocomplete="organization">
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Confirm Your Attendance
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         VENUE
+    ═══════════════════════════════════ -->
+    <section class="section venue-section" id="venue" aria-labelledby="venue-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Where &amp; How to Arrive</p>
+          <h2 id="venue-heading">Venue &amp; Directions</h2>
+        </div>
+        <div class="venue-grid">
+          <div class="venue-info">
+            <h3>Portland Grand Ballroom</h3>
+            <p class="venue-address">1234 NW Couch Street<br>Portland, Oregon 97209</p>
+            <div class="venue-details">
+              <div class="venue-detail-item">
+                <span class="detail-icon" aria-hidden="true">🕖</span>
+                <div>
+                  <strong>Date &amp; Time</strong>
+                  <p>December 31, 2024 · Doors at 7:00 PM</p>
+                </div>
+              </div>
+              <div class="venue-detail-item">
+                <span class="detail-icon" aria-hidden="true">🚗</span>
+                <div>
+                  <strong>Parking</strong>
+                  <p>Valet parking available at main entrance. Self-park options within 2 blocks. Public transit accessible via MAX Red Line (Old Town/Chinatown stop).</p>
+                </div>
+              </div>
+              <div class="venue-detail-item">
+                <span class="detail-icon" aria-hidden="true">👔</span>
+                <div>
+                  <strong>Dress Code</strong>
+                  <p>Smart casual to cocktail attire.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="venue-map">
+            <div class="map-iframe-wrap">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.5!2d-122.6784!3d45.5231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a0d9b3d0e0f%3A0x0!2sPortland+Grand+Ballroom%2C+NW+Couch+St%2C+Portland%2C+OR!5e0!3m2!1sen!2sus!4v1"
+    width="600"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Portland Grand Ballroom location on Google Maps"
+    aria-label="Interactive map showing venue location">
+  </iframe>
+  <a href="https://maps.google.com/?q=Portland+Grand+Ballroom+NW+Couch+St+Portland+OR"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="map-overlay-label"
+     aria-label="Open venue in Google Maps (opens in new tab)">
+    Open in Google Maps ↗
+  </a>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">✦</span>
+        <span>The Literary Nexus</span>
+      </div>
+      <p class="footer-copy">© 2024 The Literary Nexus · Portland, Oregon. All rights reserved.</p>
+      <p class="footer-sub">For inquiries: <a href="mailto:events@literarynexus.com">events@literarynexus.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Modal for Author Bio -->
+  <div class="modal-overlay" id="bio-modal" role="dialog" aria-modal="true" aria-labelledby="modal-author-name" hidden>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close author profile">✕</button>
+      <img class="modal-avatar" id="modal-avatar" src="" alt="">
+      <h3 id="modal-author-name"></h3>
+      <p id="modal-bio-text" class="modal-bio"></p>
+    </div>
+  </div>
+
+  <!-- JS at end of body for performance -->
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
